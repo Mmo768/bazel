@@ -1,0 +1,232 @@
+/* start normalize tag */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+span{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+/* end normalize tag */
+
+/* start fonts */
+
+.ff-p{
+    font-family: 'Poppins', sans-serif;
+}
+.ff-s{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+.fw-900{
+    font-weight: 900;
+}
+.fs-13{
+    font-size: .8125rem;
+}
+.fs-16{
+    font-size: 1rem;
+}
+.fs-20px{
+    font-size: 1.25rem;
+}
+.fs-25{
+    font-size: 1.5625rem;
+}
+.fs-30{
+    font-size: 1.875rem;
+}
+.fs-35{
+    font-size: 2.1875rem;
+}
+.fs-40{
+    font-size: 2.5rem;
+}
+.fs-45{
+    font-size: 2.8125rem;
+}
+.fs-50{
+    font-size: 3.125rem;
+}
+.lh-20{
+    line-height: 1.25rem;
+}
+.lh-25{
+    line-height: 1.5625rem;
+}
+.lh-30{
+    line-height: 1.875rem;
+}
+.lh-35{
+    line-height: 2.1875rem;
+}
+.lh-40{
+    line-height: 2.5rem;
+}
+.lh-45{
+    line-height: 2.8125rem;
+}
+.lh-50{
+    line-height: 3.125rem;
+}
+.lh-55{
+    line-height: 3.4375rem;
+}
+.text-main{
+    color: #343434;
+}
+.bg-main{
+    background-color: #343434;
+}
+.text-p{
+    color: #748182;
+}
+.text-nav{
+    color: #111;
+}
+.bg-gray{
+    background: #f7f7f7;
+}
+.fit-content{
+    width: fit-content;
+}
+/* end fonts */ 
+/* ========== start navba ========== */
+nav .image{
+    width: 90px;
+}
+/* ========== end navba ========== */
+
+/* ========== start header ========== */
+header h1{
+ font-size: 100px;
+ line-height: 100px;
+ font-weight: 700;
+ font-family: 'Poppins', sans-serif;  
+}
+@media (max-width:768px) {
+    header h1{
+        font-size: 56px;
+        line-height: 56px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;  
+       }
+}
+header .carousel-control-prev{
+    width: 50px !important;
+    border: 1px solid white;
+    bottom: unset !important;
+    top: 50%;
+    margin-left: -12px;
+}
+header .carousel-control-next{
+    width: 50px !important;
+    border: 1px solid white;
+    top: unset !important;
+    bottom: 50%;
+    right: unset !important;
+    left: 0;
+    margin-left: -12px;
+}
+header .carousel-inner .carousel-item:first-child{
+    background-image: url("../img/bg-image-28.jpg");
+    background-size: cover;
+}
+header .carousel-inner .carousel-item:last-child{
+    background-image: url("../img/bg-image-29.jpg");
+    background-size: cover;
+}
+.layer{
+    background-color: rgb(0 0 0 /.6);
+}
+header .carousel-inner>div>.box>.content{
+    opacity: 0;
+}
+header .carousel-inner>div.active>.box>.content{
+    animation: opacitty .5s linear .3s 1 normal both;
+}
+@keyframes opacitty {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* ========== end header ========== */
+/* ========== start team ========== */
+.team .text-box h2::after{
+    position: absolute;
+    content: "C";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: .2;
+    font-size: 6rem;
+    font-weight: 700;
+}
+.team .box-image{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .2s 0s all ease-in;
+}
+.team .image:hover .box-image{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ========== end team ========== */
+
+/* ========== start services ========== */
+.bg-sec{
+    background-color: #636363;
+}
+.wh{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:992px) {
+    .margintop{
+        margin-top: -12px;
+    }
+}
+.wh-90{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Prices .carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(31, 229, 255) !important;
+}
+/* ========== end services ========== */
+
